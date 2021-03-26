@@ -22,8 +22,12 @@ namespace myApp
         static void Main(string[] args)
         {
             // Console.WriteLine("Hello World!");
-            // Console.WriteLine("The current time is: " + DateTime.Now);
-            for (int i = 1; i <= 20; i++){
+            // Console.WriteLine("The current time is: " + DateTime.Now);           
+            
+            Console.WriteLine("Enter number:");
+            string n = Console.ReadLine();            
+
+            for (int i = 1; i <= Convert.ToInt16(n); i++){
                 Console.WriteLine(fizzbuzz(i));
             }            
         }
